@@ -12,4 +12,7 @@ package net.masterzach32.apples.common
  * @author Zach Kozar
  * @version 6/21/2019
  */
-class PlayerCard(id: Int, set: String, title: String, body: String?) : Card(id, set, title, body)
+class PlayerCard(id: Int, set: String, title: String, body: String?) : Card(id, set, title, body) {
+
+    override fun toString() = "PlayerCard(id=$id, set=$set, title=$title, body=$body)"
+}

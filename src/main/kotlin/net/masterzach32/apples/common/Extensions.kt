@@ -12,6 +12,6 @@ fun Deck.draw(count: Int): Set<Card> = mutableSetOf<Card>().also { (0 until coun
 
 fun Deck.draw(): Card = draw(1).first()
 
-fun List<Player>.populateStartingHand(deck: Deck, size: Int) {
+fun Deck.shuffled(): Deck = apply { shuffle() }
 
-}
+

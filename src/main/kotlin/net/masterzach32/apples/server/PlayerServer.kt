@@ -14,4 +14,9 @@ import net.masterzach32.apples.common.Player
  * @author Zach Kozar
  * @version 6/21/2019
  */
-class PlayerServer(name: String) : Player(name)
+class PlayerServer(name: String) : Player(name) {
+
+    override suspend fun flushData() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+}

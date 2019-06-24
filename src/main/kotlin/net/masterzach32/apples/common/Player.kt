@@ -16,11 +16,11 @@ abstract class Player(val name: String) {
 
     var score = 0
     var isCardCzar = false
-    var lastCardPlayed: Card? = null
+    var lastCardPlayed: Int? = null
 
     val hand = mutableListOf<PlayerCard>()
 
     abstract suspend fun flushData()
 
-    override fun toString() = "Player(name=$name)"
+    override fun toString() = "Player(name=$name, score=$score, isCardCzar=$isCardCzar, lastCardPlayed=$lastCardPlayed, hand=$hand)"
 }

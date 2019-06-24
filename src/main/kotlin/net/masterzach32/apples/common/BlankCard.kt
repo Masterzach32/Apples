@@ -12,7 +12,7 @@ package net.masterzach32.apples.common
  * @author Zach Kozar
  * @version 6/21/2019
  */
-class BlankCard(id: Int, set: String, title: String, body: String, val numBlanks: Int) : Card(id, set, title, body) {
+class BlankCard(id: Int, set: String, title: String, body: String?, val numBlanks: Int) : Card(id, set, title, body) {
 
     override fun toString() = "BlankCard(id=$id, title=$title, body=$body, numBlanks=$numBlanks)"
 }

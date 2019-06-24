@@ -23,6 +23,7 @@ dependencies {
     compile("org.jetbrains.exposed:exposed:0.15.1")
     compile("org.xerial:sqlite-jdbc:3.21.0.1")
     compile("ch.qos.logback:logback-classic:1.2.3")
+    //compile("com.googlecode.json-simple:json-simple:1.1.1")
 }
 
 tasks.withType<KotlinCompile> {

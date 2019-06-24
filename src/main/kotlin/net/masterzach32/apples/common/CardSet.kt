@@ -1,7 +1,5 @@
 package net.masterzach32.apples.common
 
-import java.util.*
-
 /*
  * apples - Created on 6/21/2019
  * Author: Zach Kozar
@@ -17,6 +15,7 @@ import java.util.*
 data class CardSet(
     val name: String,
     val author: String,
+    val description: String,
     val playerCards: Set<PlayerCard>,
     val blankCards: Set<BlankCard>
 ) {
@@ -24,5 +23,4 @@ data class CardSet(
     fun getPlayerCardsDeck() = playerCards.toDeck()
 
     fun getBlankCardsDeck() = blankCards.toDeck()
-
 }
