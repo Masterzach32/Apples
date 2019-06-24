@@ -27,7 +27,3 @@ object CardLoader {
         }
     }
 }
-
-fun main() {
-    CardLoader.loadAllCardSets()
-}

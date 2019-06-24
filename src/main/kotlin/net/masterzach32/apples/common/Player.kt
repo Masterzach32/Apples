@@ -12,13 +12,15 @@ package net.masterzach32.apples.common
  * @author Zach Kozar
  * @version 6/21/2019
  */
-open class Player(val name: String) {
+abstract class Player(val name: String) {
 
     var score = 0
     var isCardCzar = false
     var lastCardPlayed: Card? = null
 
     val hand = mutableListOf<PlayerCard>()
+
+    abstract suspend fun flushData()
 
     override fun toString() = "Player(name=$name)"
 }
